@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Guess The Number</h1>
+<p class="disclaimer"> Enter a number between 1 - 100 </p>
+<p class="disclaimer">If you number matches with the system you win !!</p>
+<p class="disclaimer"> You have a total of 10 trials</p>
+<div id="container">
+    <label for="num_input">Enter your number here:</label>
+    <input type="number" id="num_input">
+    <div id="result"></div>
+    <button id="submit_num">Submit Guess</button>
+    <p id="guess_para">Previous Guess:
+        <span id="guess_arr"></span>
+    </p>
+    <p id="trails_para">Trials left:
+        <span id="trials_count">10</span>
+    </p>
+    <button id="redirect">Get a random number within a range
+        <img id="next_img" src="next.png" alt="next">
+    </button>
+    <span id="soon">Coming soon!</span>
+</div>
+</body>
+<script src="scripts.js"></script>
+</html>

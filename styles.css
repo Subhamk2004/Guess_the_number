@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(74deg, mediumpurple, wheat);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    /*justify-content: center;*/
+}
+h1{
+    color: #22133a;
+    margin: 40px;
+}
+.disclaimer{
+    font-weight: 550;
+/*important css*/
+    background: linear-gradient(60deg, #ba0202, #3b0de6);
+    /*-webkit-background-clip: text; you can use it but it's not necessary*/
+    background-clip: text;
+    /*-webkit-text-fill-color: transparent; we can also use below or this one for transparency*/
+    color: transparent;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+label{
+    font-size: 24px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    color: #2a036c;
+}
+#num_input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 7px 5px 10px #8867d8;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    -moz-appearance: textfield; /* to remove the arrows that appear in input type number*/
+}
+#submit_num{
+    margin-top: 30px;
+    background: linear-gradient(60deg, #46d551, #9965e1);
+    border-radius: 15px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 550;
+    border: none;
+    color: #0f0327;
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+}
+#submit_num:hover{
+    width: 180px;
+    height: 45px;
+    transform: translateY(5px);
+    box-shadow: 5px 10px 10px #9890c8;
+    background: linear-gradient(60deg, #9965e1,#46d551);
+}
+
+#container p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #610261;
+}
+#result{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #007c00;
+}
+#redirect{
+    margin: 30px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+}
+#redirect:hover {
+    background: #231d35;
+    color: gray;
+    cursor: not-allowed;
+}
+#redirect:hover #next_img{
+    width: 30px;
+}
+#next_img{
+    width: 25px;
+    transition: all 0.2s ease-in-out;
+}
+#soon{
+    display: none;
+}
+#redirect:hover + #soon{
+    display: flex;
+    margin-top: -20px;
+}
