@@ -11,6 +11,9 @@ body{
     font-family: sans-serif;
     /*justify-content: center;*/
 }
+a{
+    text-decoration: none;
+}
 h1{
     color: #22133a;
     margin: 40px;
@@ -37,7 +40,7 @@ label{
     margin-bottom: 20px;
     color: #2a036c;
 }
-#num_input{
+#num1, #num2, #num_input{
     width: 200px;
     height: 40px;
     border: none;
@@ -49,7 +52,7 @@ label{
     text-align: center;
     -moz-appearance: textfield; /* to remove the arrows that appear in input type number*/
 }
-#submit_num{
+#get_num, #submit_num{
     margin-top: 30px;
     background: linear-gradient(60deg, #46d551, #9965e1);
     border-radius: 15px;
@@ -62,7 +65,7 @@ label{
     cursor: pointer;
     transition:all 0.5s ease-in-out;
 }
-#submit_num:hover{
+#submit_num:hover, #get_num:hover{
     width: 180px;
     height: 45px;
     transform: translateY(5px);
@@ -98,11 +101,7 @@ label{
     cursor: pointer;
     transition:all 0.5s ease-in-out;
 }
-#redirect:hover {
-    background: #231d35;
-    color: gray;
-    cursor: not-allowed;
-}
+
 #redirect:hover #next_img{
     width: 30px;
 }
@@ -113,7 +112,12 @@ label{
 #soon{
     display: none;
 }
-#redirect:hover + #soon{
-    display: flex;
-    margin-top: -20px;
+
+#ranged_number{
+    margin-top: 25px;
+    font-weight: 500;
+}
+#ranged_number span {
+    font-weight: 550;
+    font-size: 22px;
 }
